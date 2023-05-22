@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flask-webserver
+  labels:
+    app: flask
+spec:
+  containers:
+    - name: flask-webserver
+      image: localhost:5000/flask-webserver:v0.0.1
